@@ -1,0 +1,8 @@
+version: '3'
+services:
+    di:
+        volumes:
+        - ../:/app
+        build:
+            args:
+                BUILD_DEPS: 0

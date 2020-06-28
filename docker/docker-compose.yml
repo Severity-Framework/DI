@@ -1,0 +1,16 @@
+version: '3'
+services:
+    di:
+        labels:
+            app: di
+        build:
+            context: ../
+            dockerfile: docker/Dockerfile
+            args:
+                COMPOSER_OAUTH_TOKEN: ${COMPOSER_OAUTH_TOKEN}
+        networks:
+        - "default"
+
+networks:
+    default:
+        driver: bridge

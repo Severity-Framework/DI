@@ -1,0 +1,4 @@
+version: '3'
+services:
+    di:
+        command: [ "php", "vendor/bin/phpunit" ]
